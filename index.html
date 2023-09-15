@@ -1,0 +1,179 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+<style>
+   button#runCodeButton {margin-top: 20px;border: solid 1px #c1c1c1;padding: 15px;border-radius: 5px;background-color: #f0f0f0;}
+.mySlides{ display: none;}
+</style>
+<div class="container">
+  <div class="row">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<div class="col-md-8 col-sm-8 form-generator">
+    <div class="page_title">
+        <div><h1>Slider generator</h1></div>
+    </div>
+   
+    <div class="col-12 mt-3 description">
+        <p>HTML CSS JavaScript Simple Image Slideshow Generator</p>
+    </div>
+    <div class="GlobalOptions">
+        <div class="row options imageURL">
+            <table class="table">
+                <thead>
+                    <tr><h2 class="SliderStyle">Add images</h2></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><label>Image URL:</label></th>
+                        <td colspan="2"><input type="text" id="imageurl" placeholder="https://">
+                            <!-- <input type='file' id="imageUpload"/> -->
+                          <label for="imageFile" class="upload-icon">
+                                <i class="fa fa-upload"></i>
+                                <input type="file" id="imageUpload" accept="image/*">
+                          </label>
+                          </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label>Image alt</label></th>
+                        <td colspan="2"> <input type="text" id="imagealt" placeholder="image alt"></td>
+                    <tr>
+                    <tr>
+                        <th scope="row"><label>Image name</label></th>
+                        <td colspan="2"><input type="text" id="Imagename" placeholder="Image name"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label>Link URL</label></th>
+                        <td colspan="2"><input type="text" id="linkurl"class="linkurl" placeholder="https://"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"colspan="1"> <label >Slider ID</label></th>
+                        <td><input type="text"class="classname"id="dummyname"value="slidecontainer1"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"colspan="3"> <input type="submit"name="submit"id="insert"value="insert"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+    </div>
+    <div class="generatorOptions">
+        <div class="tab-container">
+            <div class="sliderimage" id="slidenewimage"></div>
+        </div>
+    </div>
+    <div class="boxLaoyut"id="slidecontainer1">
+        <div class="box" id="box">
+            <div class="slider"> 
+                <div class="hcg-slider-body">
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="dotcontrol" id="dotcontrol" style="text-align:center"></div>
+    <div class="generatorOptions slidercontrol ">
+    <table class="table">
+         <thead>
+            <tr>
+                <h2 class="SliderStyle">Slider Style</h2>
+            </tr>
+        </thead>
+        <tbody>
+              <tr>
+                <th scope="row"><label>Image width</label></th>
+                    <td colspan="2"> <input type="number"class="Imagewidth" id="Imagewidth" max="1000" readonly=""value="670">
+                      <label for="">Auto</label>
+                      <input type="checkbox"class="checkboxwidth"id="checkboxwidth"checked="">
+                    </td>
+              </tr>
+              <tr>
+                  <th scope="row"><label>Image Height</label></th>
+                    <td colspan="2"> <input type="number" class="ImageHeight"id="ImageHeight" max="800"readonly=''value="400">
+                      <label for="">Auto</label>
+                      <input type="checkbox"class="checkboxheight"id="checkboxheight"checked="">
+                    </td>
+              </tr>
+              <tr>
+                <th scope="row"> <label>Animation effect</label></th>
+                  <td>  <input type="checkbox" clas="slideranimation"id="slideranimation"></td>
+                  <td colspan="2">
+                    <select class="input-select fnst" id="csef"disabled="true">
+                        <option value="bounce">Bounce</option>
+                        <option value="bounceInDown">Bounce In Down</option>
+                        <option value="bounceInLeft">Bounce In Left</option>
+                        <option value="bounceInRight">Bounce In Right</option>
+                        <option value="bounceInUp">Bounce In Up</option>
+                        <option value="fadeIn" selected="">Fade In</option>
+                    </select>
+                  </td>
+              </tr>
+                 <tr>
+                    <th scope="row"><label>Auto-play Image</label></th>
+                    <td><input type="checkbox"id="autoplay" class="autoplay"></td>
+                    <td colspan="2">
+                        <div class="speedplay"> 
+                            <label for="imgapy">Delay second </label>
+                            <input type="number"class="Auto-playspeed"id="Autoplayspeed"readonly="" min="1"value="2"max="100">
+                        </div>
+                    </td>
+                 </tr>
+                <tr>
+                  <th scope="row"><label>Show Slide Number</label></th>
+                  <td colspan="2">  <input type="checkbox" class="showslidenumber"id="showslidenumber" checked=""></td>
+                </tr>
+                <tr>
+                  <th scope="row"><label>Show Image Name</label></th>
+                  <td colspan="2"><input type="checkbox" id="showslidername"checked=""></td>
+                </tr>
+                <tr>
+                  <th scope="row"><label>Show dot Controls</label></th>
+                  <td colspan="2"><input type="checkbox" id="showdotcontrol"></td>
+                </tr>
+         </tbody>
+    </table>
+    <div class="tab-content">
+        <button id="generateCodeButton"><img src="assets/images/tools/16x16/tools2.png"> Generate Code</button>
+        
+        <button id="runCodeButton"><i class="fa fa-eye"></i> Run Code</button>
+    </div>
+    </div>
+      <div class="html-code-generatordiv hidden"id="htmlcodegen">
+            <div class="code-genrator-heading">
+                 <h2 class="headingcodegen">HTML </h2> 
+            </div>
+             <div class="htmlcodegenerator"id="htmlcodegenerator">
+                      <!-- html code gen  -->
+              </div>
+              <button id="htmlcopyCodeButton"class="buttoncopyCodeButton" ><i class="fa fa-clone"></i> Copy Code</button>
+      </div>
+      <div class=" html-code-generatordiv hidden"id="csscodegen">
+              <div class="code-genrator-heading">
+                  <h2 class="headingcodegen">CSS</h2>
+              </div>
+              <div class="csscodegenerator"id="csscodegenerator">
+              <!-- css code gen  -->
+              </div>
+              <button id="csscopyCodeButton"class="buttoncopyCodeButton"><i class="fa fa-clone"></i> Copy Code</button>
+      </div>
+        <div class=" html-code-generatordiv hidden"id="js">
+              <div class="code-genrator-heading"> 
+                <h2 class="headingcodegen">JavaScript</h2>
+              </div> 
+              <div class="jscodegenerator"id="jscodegenerator">
+                  <!-- js code genrator -->
+              </div>
+              <button id="jscopyCodeButton"class="buttoncopyCodeButton"><i class="fa fa-clone"></i> Copy Code</button>
+        </div>
+      </div>
+ 
+   <div class="cols col_4_of_12">
+       <h3>Sidebar</h3>
+   </div>
+  </div>
+</div>
+<script src="assets/js/custom.js"></script>
+
