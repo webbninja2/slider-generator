@@ -495,8 +495,8 @@ for (let i = 0; i < imageUrls.length; i++) {
       <div class="box" id="box">
         <div class="slider"style="max-width:${Imagewidth.value.length > 0 ?sliderwidth:'1000px'};height:${ImageHeight.value.length > 0 ?sliderHeight:'500px'};">
           <div class="hcg-slider-body">
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+            <a class="prev" onclick="plusSlides(-1)"><</a>
+            <a class="next" onclick="plusSlides(1)">></a>
           </div>
         </div>
       </div>
